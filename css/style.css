@@ -75,6 +75,11 @@
     font-style:normal !important;
 }
 
+.demo-img img {
+    height:650px;
+    width:650px;
+}
+
 .promo i {
     color:#2196F3;
     font-size:7rem;
