@@ -104,6 +104,7 @@ nav ul a {
     display:block;
     font-weight:300;
     padding:0px 15px;
+    font-style: bold;
 }
 
 .cd-headline.type .cd-words-wrapper {
