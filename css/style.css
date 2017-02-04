@@ -8,14 +8,31 @@
     padding:015px;
 }
 
-#index-banner { 
-    min-height: 100vh;
-    background-color:#070F26;
+#index-banner {
+    min-height: 85vh;
 }
+
 #intro {
     min-height: 100vh;
     background-color: #FFCFBF;
     font-color: white;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 #work {
     min-height: 100vh;
@@ -31,7 +48,6 @@
 }
 
 .text_h {
-    padding:15% 0;
     font-size:6.0em;
     font-weight:100;
     color:white;
@@ -279,7 +295,7 @@ nav a.button-collapse {
 }
 
 .parallax-container {
-    max-height:400px;
+    max-height: 400px;
 }
 
 footer.page-footer {
