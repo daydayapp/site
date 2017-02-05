@@ -1,20 +1,21 @@
 .default_color { 
-    background-color:#76D6FF !important;
+    background-color:#0A151C !important;
 }
 .default_color_text {
     color:#2196F3 !important;
 }
+
 .icon-block {
     padding:015px;
 }
 
 #index-banner {
-    min-height: 85vh;
+    min-height: 95vh;
 }
 
 #intro {
-    min-height: 100vh;
-    background-color: #FFCFBF;
+    min-height: 95vh;
+    background-color: #728BAB;
     font-color: white;
 }
 
@@ -27,19 +28,47 @@
     overflow: hidden;
     z-index: -100;
 }
+
 .fullscreen-bg__video {
     position: absolute;
-    min-height: 100vh;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
 }
 #work {
     min-height: 100vh;
     background-color: #070F26;
 }
 #team {
-    background-color: #FFCFBF;
+    background-color: #395377;
+}
+
+#contact {
+    background-color: #07162A;
 }
 
 #nav_f {
@@ -53,7 +82,7 @@
     color:white;
 }
 .brand-logo {
-    font-family: 'Bungee Outline', cursive;
+    font-family: 'Oswald', sans-serif;
     position:absolute;
     color:#fff;
     display:inline-block;
@@ -114,9 +143,9 @@
     color:#EF9A9A;
 }
 nav ul a {
-    font-family: 'Bungee Hairline', cursive;
+   font-family: 'Open Sans', sans-serif;
     font-size:1.2rem;
-    color: black;
+    color: white;
     letter-spacing:2px;
     display:block;
     font-weight: bold;
@@ -295,7 +324,7 @@ nav a.button-collapse {
 }
 
 .parallax-container {
-    max-height: 400px;
+    max-height: 300px;
 }
 
 footer.page-footer {

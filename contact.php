@@ -2,7 +2,7 @@
 
 if(isset($_POST['email'])) {
 
-    $email_to = "application.weplay@gmail.com";
+    $email_to = "hello.weplay@gmail.com";
  
     $email_subject = "Website Contact";
 
@@ -76,11 +76,7 @@ if(isset($_POST['email'])) {
 
 
 ?>
- 
- 
- 
-<!-- include your own success html here -->
- 
+  
  
  
 Thank you for contacting us. We will be in touch with you very soon.
