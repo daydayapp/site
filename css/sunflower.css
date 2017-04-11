@@ -3321,6 +3321,7 @@ svg {
     left: -15px; }
     #home .h-content {
       position: relative;
+      font-size: 1.15em;
       z-index: 0;
       margin: 50px 0;
       color: #fff; }
