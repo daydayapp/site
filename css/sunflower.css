@@ -321,6 +321,7 @@ h6 {
   z-index: 1; }
   #home .h-content {
     position: relative;
+    font-size: 1.15em;
     z-index: 0;
     top: 30vh;
     color: #fff; }
