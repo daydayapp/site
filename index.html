@@ -19,8 +19,9 @@
       <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.ico">
 
       <!--  Resources style ================== -->
-      <link href="css/sunflower.css" rel="stylesheet" type="text/css" media="all"/>
-      <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/sunflower.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/hotpink.css" ref="stylesheet" type="text/css" media="all" />
 
     </head>
     <body>
@@ -33,18 +34,18 @@
           <div id="home" class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
 
             <div class="h-content top-15">
-              <h1 class="mid animated fadeInUp mb50 m-heading fw700">Day Day, <br> Finally an app <br> for KPOP fans <br> by KPOP fans <br>
-              </h1>
+              <h1 class="mid animated fadeInUp">Day Day</h1>
+              <h2 class="mid animated fadeInUp mb50 s-heading fw700">Finally an app <br> for KPOP fans <br> by KPOP fans <br>
+              </h2>
 
-              <div class="mt30 slow animated fadeInUp">
-                <div class="fadeup vertical compress">
+              <div class="mt40 slow animated fadeInUp">
+                <a href="#" id="open-popup" onclick="showMailingPopUp(); return false;" class="button btn-solid mr20 round">STAY IN TOUCH</a>
 
-                    
-                      <button class="submit btn-solid round input-submit" disabled>Contact Us @ app.dayday@gmail.com</button>
-                      <p></p>
-                      <a href="https://twitter.com/daydayapp"><button class=" btn-solid round"><i class="fa fa-twitter"></i></button> </a>
-                    
-                  </div>
+                <div class="social_tab inline">
+                  <ul class="social_icons">
+                    <li><a href="https://twitter.com/daydayapp"><i class="ti-twitter-alt "></i></a></li>
+                  </ul>
+                </div>
               </div>
 
             </div>
@@ -102,6 +103,14 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/rocket.js"></script>
       <script src="js/script.js"></script>
-      <script src="https://use.fontawesome.com/3f8cdeb846.js"></script>
+      <script src="https://use.fontawesome.com/f6898c4015.js"></script>
+      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+      <script type="text/javascript">
+        function showMailingPopUp() {
+            require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"76fec6d05fb7b1a3a3c4ab609","lid":"34b8b45b31"}) })
+            document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        };
+      </script>
+
   </body>
 </html>

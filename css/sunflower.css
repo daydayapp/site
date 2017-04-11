@@ -3519,4 +3519,10 @@ svg {
   .main-logo {
     max-width: 80px; } }
 
+@media only screen and (min-width: 481px) {
+	#mc_form_pop {
+		width: 460px;
+	}
+}
+
 /*# sourceMappingURL=sunflower.css.map */
